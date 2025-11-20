@@ -16,12 +16,8 @@ export default function TaskListPage() {
   const [filteredTasks, setFilteredTasks] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const tasksPerPage = 4;
-  let numberOfPages;
-  if (tasks.length > tasksPerPage) {
-    numberOfPages = Math.floor(tasks.length / tasksPerPage) + 1;
-  } else {
-    numberOfPages = Math.floor(tasks.length / tasksPerPage);
-  }
+  let numberOfPages=Math.ceil(tasks.length/tasksPerPage);
+  
   const loadTasks = async () => {
     const res = await fetchTasks();
     setTasks(res.data);
@@ -53,7 +49,6 @@ export default function TaskListPage() {
     setEditingTask(task);
     setTaskFormOpen(true);
   };
-  console.log(numberOfPages);
   return (
     <div style={{ padding: "2rem" }} className="task-list">
       <h1>Task Manager</h1>
@@ -170,3 +165,4 @@ export default function TaskListPage() {
     </div>
   );
 }
+
