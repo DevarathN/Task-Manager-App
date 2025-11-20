@@ -125,3 +125,9 @@ select.filter-status {
   padding: 10px;
   border-radius: 5px;
 }
+.pagination button:nth-child(1),.pagination button:nth-child(3){
+  background-color:lightgray;
+  border-radius:5px;
+  color:black;
+  border:none
+}
