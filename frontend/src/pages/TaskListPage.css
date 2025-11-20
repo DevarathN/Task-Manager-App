@@ -131,3 +131,11 @@ select.filter-status {
   color:black;
   border:none
 }
+.pagination button:nth-child(1):disabled,.pagination button:nth-child(3):disabled{
+  background-color:initial;
+}
+.pagination button:first-child:disabled:hover, .pagination button:nth-child(3):disabled:hover {
+    transform: scale(1);
+    cursor: initial;
+}
+
