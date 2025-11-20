@@ -1,0 +1,13 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+button {
+  font-family: "Montserrat", sans-serif;
+}
+select:hover {
+  cursor: pointer;
+}

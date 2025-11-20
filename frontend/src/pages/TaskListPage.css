@@ -1,0 +1,127 @@
+.add-task {
+  background-color: rgb(109, 109, 109);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(65, 64, 64);
+}
+
+.add-task:hover {
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr {
+  display: flex;
+  gap: 20px;
+  border: 1px solid grey;
+  padding: 10px;
+  align-items: center;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+th:nth-child(1),
+td:nth-child(1) {
+  width: 25%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+  width: 35%;
+}
+th:nth-child(3),
+td:nth-child(3) {
+  width: 15%;
+  width: 10%;
+  white-space: nowrap;
+}
+th:nth-child(4),
+td:nth-child(4) {
+  width: 25%;
+}
+td:nth-child(4) {
+  display: flex;
+  gap: 20px;
+}
+td.status {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+td.status.pending {
+  background-color: rgb(255, 228, 228);
+  color: rgb(255, 0, 0);
+}
+td.status.in-progress {
+  background-color: rgb(230, 230, 255);
+  color: rgb(0, 89, 255);
+}
+td.status.completed {
+  background-color: rgb(233, 255, 233);
+  color: green;
+}
+
+table button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 5px 20px;
+  width: 40%;
+}
+table button i {
+  font-size: 20px;
+}
+table .edit-btn {
+  background-color: rgb(255, 247, 233);
+  color: orange;
+  box-shadow: 1px 1px 1px 1px orange;
+}
+table .edit-btn i {
+  color: rgb(255, 166, 0);
+}
+table .delete-btn {
+  background-color: rgb(253, 230, 230);
+  color: red;
+  box-shadow: 1px 1px 1px 1px red;
+}
+table .delete-btn i {
+  color: red;
+}
+select.filter-status {
+  border: none;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(219, 219, 219);
+  border-radius: 5px;
+  background-color: black;
+  color: whitesmoke;
+  padding: 15px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.pagination button:nth-child(2) {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
