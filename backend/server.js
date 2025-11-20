@@ -7,7 +7,7 @@ import taskRoutes from "./routes/taskRoutes.js";
 dotenv.config();
 
 const app = express();
-app.use(cors({origin:"https://task-manager-app-7pif.vercel.app",methods:["GET","POST","PUT","DELETE"]}));
+app.use(cors({origin:process.CLIENT_URL,methods:["GET","POST","PUT","DELETE"]}));
 app.use(express.json());
 
 app.use("/api/tasks", taskRoutes);
