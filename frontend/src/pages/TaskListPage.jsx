@@ -157,7 +157,7 @@ export default function TaskListPage() {
           onClick={() => {
             setCurrentPage((page) => page + 1);
           }}
-          disabled={currentPage === numberOfPages}
+          disabled={currentPage === numberOfPages || numberOfPages===0}
         >
           Next
         </button>
@@ -165,4 +165,5 @@ export default function TaskListPage() {
     </div>
   );
 }
+
 
