@@ -11,7 +11,9 @@
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "axios": "^1.6.0"  // <-- axios added here
+
   },
   "scripts": {
     "start": "react-scripts start",
